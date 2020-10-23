@@ -21,7 +21,7 @@ jobs:
           node-version: 12
 
       - name: Cache App Dependencies
-        uses: actions/cache@v2.1.0
+        uses: actions/cache@v2.1.2
         with:
           path: ~/.npm
           key: ${{ runner.os }}-app-${{ hashFiles('package-lock.json') }}
