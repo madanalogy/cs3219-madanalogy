@@ -122,6 +122,8 @@ jobs:
           npm run functions:build
 
       - name: Build App
+        env:
+          SKIP_PREFLIGHT_CHECK: true
         run: |
           npm run build
 
