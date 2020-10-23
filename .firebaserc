@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "cs3219-madanalogy",
+    "master": "cs3219-madanalogy",
+    "prod": "cs3219-madanalogy"
+  }
+}
