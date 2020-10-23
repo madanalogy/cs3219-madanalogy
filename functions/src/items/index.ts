@@ -80,7 +80,14 @@ async function get(
   } else {
     dbRef.get().then(
       (dbSnap) => {
-        res.status(200).send(dbSnap.docs)
+        const data: any[] = []
+        dbSnap.docs.forEach((doc) => {
+          data.push({
+            id: doc.id,
+            ...doc.data()
+          })
+        })
+        res.status(200).send(data)
       },
       () => res.status(500).send()
     )
