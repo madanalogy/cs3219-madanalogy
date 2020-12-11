@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.9",
-    "@types/node": "^14.0.13",
+    "@types/node": "^14.14.12",
     "@firebase/testing": "^0.20.10",
     "cross-env": "^7.0.2",
     "firebase-functions-test": "^0.2.1",
